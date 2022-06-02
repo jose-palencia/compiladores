@@ -1,0 +1,23 @@
+h1{
+    color: #000000;
+}
+
+h1 span{
+    color: #2988E0;
+}
+
+/* 
+
+id = debe ser unico 
+class = si se pueden repetir y tambien se puede usar
+        varias en una sola etiqueta
+
+*/
+
+#navegacion{
+    background-color: aqua;
+}
+
+.navegacion-categorias{
+    background-color: brown;
+}
