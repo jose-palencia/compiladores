@@ -1,9 +1,52 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 h1{
     color: #000000;
 }
 
-h1 span{
+/* Globales */
+a {
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Header y Navegacion */
+
+.nombre-sitio {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.nombre-sitio span{
     color: #2988E0;
+}
+
+.contenedor-navegacion{
+    border-top: 1px solid #C1C1C1;
+}
+
+.baner{
+    background-image: url('../images/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 490px;
 }
 
 /* 
@@ -14,10 +57,23 @@ class = si se pueden repetir y tambien se puede usar
 
 */
 
-#navegacion{
-    background-color: aqua;
+.nav-principal{
+    padding: 10px 0;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    /* flex-direction: column;
+    height: 300px; */
 }
 
-.navegacion-categorias{
-    background-color: brown;
+.listado-categorias{
+    display: grid;
+
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /* grid-template-columns: repeat(4, 200px); */
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
 }
