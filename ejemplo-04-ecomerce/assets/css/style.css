@@ -1,21 +1,42 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
 
-h1{
+/* Globales */
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
     color: #000000;
 }
 
-/* Globales */
-a {
-    text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
 }
 
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -24,13 +45,17 @@ a {
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 /* Header y Navegacion */
 
+header{
+    /* font-size: 200px; */
+}
+
 .nombre-sitio {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -39,14 +64,15 @@ img{
 }
 
 .contenedor-navegacion{
-    border-top: 1px solid #C1C1C1;
+    border-top: .1rem solid #C1C1C1;
 }
 
 .baner{
     background-image: url('../images/principal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 490px;
+    background-position: center center;
+    height: 55rem;
 }
 
 /* 
@@ -58,7 +84,7 @@ class = si se pueden repetir y tambien se puede usar
 */
 
 .nav-principal{
-    padding: 10px 0;
+    padding: 1rem 0;
     /* padding-top: 10px;
     padding-bottom: 10px; */
     display: flex;
@@ -69,11 +95,37 @@ class = si se pueden repetir y tambien se puede usar
     height: 300px; */
 }
 
+/* Categorias */
+
+.categorias{
+    padding-top: 5rem;
+}
+
+.categorias h2 {
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.categoria a {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #828282;
+    border-bottom-right-radius: 1rem;
+}
+
+.categoria a:hover{
+    background-color: #2988E0;
+    color: white;
+}
+
 .listado-categorias{
     display: grid;
 
     /* grid-template-columns: 200px 200px 200px 200px; */
     /* grid-template-columns: repeat(4, 200px); */
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 2rem;
 }
