@@ -129,3 +129,25 @@ class = si se pueden repetir y tambien se puede usar
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
 }
+
+/* Sobre nosotros */
+
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #2988E0 50% , #2988E0 100%), url(../images/nosotros.jpg);
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+
+}
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15rem;
+}
+
+.texto-nosotros{
+    grid-column: 2 / 3;
+    color: white;
+}
