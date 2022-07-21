@@ -48,6 +48,25 @@ img{
     display: block;
 }
 
+.btn {
+    color: black;
+    background-color: #9BFB99;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+
+.btn:hover {
+    background-color: #5FBB5D;
+}
+
+/* Utilitarios */
+.text-center {
+    text-align: center;
+}
+
 /* Header y Navegacion */
 
 header{
@@ -99,6 +118,7 @@ class = si se pueden repetir y tambien se puede usar
 
 .categorias{
     padding-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .categorias h2 {
@@ -138,7 +158,7 @@ class = si se pueden repetir y tambien se puede usar
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 100%, 120rem;
-
+    margin-bottom: 5rem;
 }
 
 .sobre-nosotros-grid{
@@ -150,4 +170,139 @@ class = si se pueden repetir y tambien se puede usar
 .texto-nosotros{
     grid-column: 2 / 3;
     color: white;
+}
+
+/* Listado de Productos */
+
+.contenido-principal {
+
+}
+
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.producto { 
+    background-color: #2988E0;
+}
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img {
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(2) img,
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.texto-producto {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.texto-producto h3 {
+    margin: 0;
+}
+
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+
+.texto-producto .precio {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+/* .texto-producto a {
+    color: black;
+    background-color: #9BFB99;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+
+.texto-producto a:hover {
+    background-color: #5FBB5D;
+} */
+
+/* .producto img {
+    transition: transform .3s ease-out;
+}
+
+.producto img:hover {
+    transform: scale(.8);
+} */
+
+/* Footer */
+
+.site-footer{
+    border-top: 1px solid #C1C1C1;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+.site-footer h3 {
+    margin-bottom: .5rem;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-menu a{
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: #828282;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #828282;
 }
